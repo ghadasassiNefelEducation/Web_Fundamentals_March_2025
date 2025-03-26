@@ -1,0 +1,39 @@
+#red{
+    background-color: red;
+    /* margin-top: 50px; */
+    
+}
+#green{
+    background-color: green;
+    height: 300px;
+}
+#blue{
+    background-color: blue;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    padding-left: 30px;
+    border: 5px solid black;
+    border-radius: 10%;
+    /* margin-top: 50px; */
+    /* display: inline; */
+    display: inline-block;
+    vertical-align: middle;
+    
+    /* margin: 10px 20px 30px 40px; */
+}
+
+.container{
+    background-color: aqua;
+    /* padding: 30px; */
+    
+}
+
+*{
+    margin: 0px;
+}
