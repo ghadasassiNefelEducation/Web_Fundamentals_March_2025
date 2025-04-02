@@ -1,0 +1,46 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.box{
+    width: 300px;
+    background-color: aquamarine;
+    /* position: static; */
+    /* bottom: 20px;
+    right: 20px; */
+    text-align: center;
+    padding: 20px;
+}
+
+.relative-box{
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.fixed-box {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+.absolute-box {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+/* .container{
+    display: flex;
+} */
+.sticky-box {
+    /* display: inline-block; */
+    position: sticky;
+    top: 100px;
+    right: 1000px;
+}
