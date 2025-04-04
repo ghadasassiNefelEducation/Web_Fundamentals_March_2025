@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Interactive Product Cards</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <h1>Shoes Shopping</h1>
+        <div class="container">
+            <div class="product-card">
+                <img onmouseover="zoom(this)" onmouseout="zoomout(this)" src="product1.jpg" alt="Product Image" class="product-img" />
+                <h2 class="product-title" id="product-title2">Cool Sneakers</h2>
+                <p class="product-description">Comfortable running shoes.</p>
+                <span class="product-price">$59.99</span>
+                <div>
+                    <button class="buy-btn" onclick="addToCard('#product-title2')">Buy Now</button>
+                    <button class="review-btn" onmouseout="unhovered(this)" onmouseover="hovered(this)">Review</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img onmouseover="zoom(this)" onmouseout="zoomout(this)"   src="product2.jpg" alt="Product Image" class="product-img" />
+                <h2 class="product-title" id="product-title1">Running Shoes</h2>
+                <p onclick="addToCard('#product-title1')" class="product-description">Lightweight shoes for running.</p>
+                <span class="product-price">$79.99</span>
+                <div>
+                    <button class="buy-btn" onclick="addToCard('#product-title1')">Buy Now</button>
+                    <button class="review-btn" onclick="showInput('#comment')">Review</button>
+                </div>                
+            </div>
+
+            <div class="product-card">
+                <img onmouseover="zoom(this)" onmouseout="zoomout(this)"  src="product3.jpg" alt="Product Image" class="product-img" />
+                <h2 class="product-title" id="product-title">Casual Shoes</h2>
+                <p class="product-description">Stylish and comfortable.</p>
+                <span class="product-price">$49.99</span>
+                <div>
+                    <button class="buy-btn" onclick="addToCard('#product-title')">Buy Now</button>
+                    <button class="review-btn">Review</button>
+                </div>
+                
+            </div>
+        </div>
+        <div style="display: none;" id="comment">
+            <label for="">Comment</label>
+            <input type="text" id="input" oninput="showComment('#parag', this)">
+
+        </div>
+        <p id="parag"></p>
+        <label>I would like to eat </label>
+        <select onchange="chooseLunch(this)">
+            <option>Tacos</option>
+            <option>Pasta</option>
+            <option>Sushi</option>
+        </select>
+
+        <script src="script.js"></script>
+    </body>
+</html>
